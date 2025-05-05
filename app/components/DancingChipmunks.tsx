@@ -137,6 +137,29 @@ const DancingChipmunks = () => {
             height: 100%;
             animation: dance var(--dance-duration) infinite ease-in-out;
           }
+
+          .dancing-chipmunks-row {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            width: 100%;
+            max-width: 100vw;
+            padding: 0 1rem;
+          }
+          @media (max-width: 600px) {
+            .dancing-chipmunks-row {
+              gap: 0.5rem;
+              bottom: 10%;
+            }
+            .dancing-container {
+              width: 64px !important;
+              height: 64px !important;
+            }
+          }
         `}</style>
 
         {/* Synthwave grid background */}
@@ -146,16 +169,7 @@ const DancingChipmunks = () => {
         <div className="synthwave-sun"></div>
 
         {/* Container for the 3 squirrels */}
-        <div style={{
-          position: 'absolute',
-          bottom: '5%',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          display: 'flex',
-          gap: '2rem',
-          justifyContent: 'center',
-          width: '100%'
-        }}>
+        <div className="dancing-chipmunks-row">
           {chipmunks.map((chipmunk, index) => (
             <div
               key={index}
