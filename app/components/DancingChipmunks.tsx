@@ -172,7 +172,7 @@ const DancingChipmunks = () => {
             >
               <div className="dancing-squirrel">
                 <img
-                  src="/tumblr_maw6nhSaKa1rfjowdo1_500.gif"
+                  src="https://chaweonkoo.github.io/BYOA-Pomodoro/tumblr_maw6nhSaKa1rfjowdo1_500.gif"
                   alt="Dancing squirrel"
                   style={{
                     width: '100%',
