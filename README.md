@@ -6,3 +6,4 @@ A modern Pomodoro timer application built with Next.js and Tailwind CSS
 - 25-minute Pomodoro timer
 - Short and long break options
 - Clean and intuitive interface
+- Automatic GitHub updates
