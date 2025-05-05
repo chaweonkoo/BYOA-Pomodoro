@@ -177,6 +177,7 @@ const PomodoroTimer: React.FC = () => {
           }
           .bg-black\/90 {
             padding: 1.25rem !important;
+            padding-bottom: 5rem !important;
           }
         }
       `}</style>

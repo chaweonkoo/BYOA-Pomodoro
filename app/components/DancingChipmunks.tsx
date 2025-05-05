@@ -153,7 +153,15 @@ const DancingChipmunks = () => {
           @media (max-width: 600px) {
             .dancing-chipmunks-row {
               gap: 0.5rem;
-              bottom: 10%;
+              position: fixed;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              width: 100vw;
+              transform: none;
+              justify-content: center;
+              background: rgba(26, 15, 46, 0.85);
+              z-index: 100;
             }
             .dancing-container {
               width: 64px !important;
