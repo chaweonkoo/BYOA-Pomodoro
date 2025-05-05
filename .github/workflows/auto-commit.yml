@@ -31,12 +31,15 @@ jobs:
           git config --global user.email 'github-actions@github.com'
           git add .
           if git diff --staged --quiet; then
-            echo "No changes to commit"
-            exit 0
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
       - name: Commit and push if changes exist
-        if: success() && steps.git-check.outcome == 'success'
+        if: steps.git-check.outputs.changed == 'true'
         run: |
           git commit -m "Auto-commit: Update dependencies and build files [skip ci]"
-          git push 
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
