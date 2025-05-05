@@ -128,7 +128,7 @@ const PomodoroTimer: React.FC = () => {
         }
       `}</style>
       <div
-        className="bg-black/90 backdrop-blur-sm rounded-xl shadow-lg p-8 w-full max-w-lg border-4 border-[#0fa]"
+        className="bg-black/60 backdrop-blur-sm rounded-xl shadow-lg p-8 w-full max-w-lg border-4 border-[#0fa]"
         style={{ boxSizing: 'border-box' }}
       >
         <h1 className="retro-heading text-2xl text-center mb-8">Pomodoro Timer</h1>
@@ -175,7 +175,7 @@ const PomodoroTimer: React.FC = () => {
           .retro-heading {
             font-size: 1.1rem !important;
           }
-          .bg-black\/90 {
+          .bg-black\/60 {
             padding: 1.25rem !important;
             padding-bottom: 5rem !important;
           }
